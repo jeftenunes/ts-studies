@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const strict_property_initialization_1 = __importDefault(require("./samples/strict-property-initialization"));
 const custom_data_structures_1 = require("./samples/custom-data-structures");
 const in_operator_1 = require("./samples/in-operator");
+const services_1 = require("./samples/services");
 console.log(`TS course`);
 console.log('Null check and strict property initialization sample');
 //Null check and strict property initialization
@@ -50,4 +51,8 @@ console.log(actionList);
 for (let action of actionList) {
     console.log(action.type);
 }
+const todoService = new services_1.TodoService();
+todoService
+    .todos
+    .then(todo => console.log(todo));
 //# sourceMappingURL=app.js.map

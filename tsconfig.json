@@ -1,13 +1,14 @@
 {
     "compilerOptions": {
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist",
-      // "strictPropertyInitialization": true,
-      // "strictNullChecks": true
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        // "strictPropertyInitialization": true,
+        // "strictNullChecks": true
     },
     "lib": ["es2015"]
   }

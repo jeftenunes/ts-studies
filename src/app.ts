@@ -1,6 +1,7 @@
 import Library from './samples/strict-property-initialization';
 import { Action, ListNode, ActionIterator } from './samples/custom-data-structures';
 import { UserImpl, waitsAdmin, AdminImpl } from './samples/in-operator';
+import { TodoService } from './samples/services';
 
 console.log(`TS course`);
 console.log('Null check and strict property initialization sample');
@@ -60,3 +61,8 @@ console.log(actionList);
 for(let action of actionList) {
     console.log(action.type);
 }
+
+const todoService = new TodoService();
+todoService
+    .todos
+    .then(todo => console.log(todo));
